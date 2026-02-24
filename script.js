@@ -62,8 +62,6 @@ if (isFinePointer) {
 }
 
 if (isMobileViewport && 'IntersectionObserver' in window) {
-  let revealOrder = 0;
-  const seen = new WeakSet();
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -71,12 +69,7 @@ if (isMobileViewport && 'IntersectionObserver' in window) {
         const isVisible = entry.target.classList.contains('is-visible');
 
         if (entry.isIntersecting && (ratio >= 0.32 || !isVisible)) {
-          if (!seen.has(entry.target)) {
-            const delay = Math.min(revealOrder * 70, 560);
-            entry.target.style.setProperty('--reveal-delay', `${delay}ms`);
-            revealOrder += 1;
-            seen.add(entry.target);
-          }
+          entry.target.style.setProperty('--reveal-delay', '0ms');
           entry.target.classList.add('is-visible');
         } else if (!entry.isIntersecting || ratio <= 0.06) {
           entry.target.classList.remove('is-visible');

@@ -65,18 +65,15 @@ if (isMobileViewport && 'IntersectionObserver' in window) {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        const ratio = entry.intersectionRatio || 0;
-        const isVisible = entry.target.classList.contains('is-visible');
-
-        if (entry.isIntersecting && (ratio >= 0.32 || !isVisible)) {
+        if (entry.isIntersecting) {
           entry.target.style.setProperty('--reveal-delay', '0ms');
           entry.target.classList.add('is-visible');
-        } else if (!entry.isIntersecting || ratio <= 0.06) {
+        } else {
           entry.target.classList.remove('is-visible');
         }
       });
     },
-    { threshold: [0, 0.06, 0.2, 0.32, 0.5], rootMargin: '0px 0px -10% 0px' }
+    { threshold: 0.01, rootMargin: '0px 0px -2% 0px' }
   );
 
   workItems.forEach((item) => observer.observe(item));

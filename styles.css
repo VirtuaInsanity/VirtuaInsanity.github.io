@@ -247,7 +247,7 @@ body::before {
 
 .hero-logo {
   position: absolute;
-  right: clamp(24px, 4vw, 72px);
+  right: -400px;
   top: 52%;
   transform: translateY(-50%);
 }

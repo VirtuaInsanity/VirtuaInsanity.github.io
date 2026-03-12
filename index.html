@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Print&Paint</title>
-  <meta name="description" content="Оперативная полиграфия: визитки, листовки, каталоги, наклейки, календари и сувенирная печать.">
+  <meta name="description" content="Оперативная полиграфия: визитки, листовки, буклеты, наклейки, этикетки, коробки и сувенирная печать.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Unbounded:wght@500;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -12,14 +12,22 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="container nav-wrap">
-      <div class="header-meta">
-        <p class="meta-time">ПН-ПТ 09:00-19:00</p>
-        <p class="meta-address">ул. Адмирала Макарова, 8 стр. 1</p>
+    <div class="top-bar">
+      <div class="container top-bar-inner">
+        <a class="top-link" href="#contacts">Заказать</a>
+        <a class="top-link" href="https://yandex.ru/maps/?text=Print%20%26%20Paint%20%D0%90%D0%B4%D0%BC%D0%B8%D1%80%D0%B0%D0%BB%D0%B0%20%D0%9C%D0%B0%D0%BA%D0%B0%D1%80%D0%BE%D0%B2%D0%B0%208%20%D1%81%D1%82%D1%80%201" target="_blank" rel="noopener">Оставить отзыв</a>
+        <span class="top-text">telegram:@print_and_paint</span>
+        <a class="top-link" href="mailto:printandpaint@mail.ru">почта: printandpaint@mail.ru</a>
+        <a class="top-link" href="tel:+79266020633">тел. +7(926)602-06-33</a>
       </div>
+    </div>
+    <div class="container nav-wrap">
+      <div class="header-spacer"></div>
       <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">Меню</button>
       <nav class="nav" id="main-nav">
+        <a href="#works">Работы</a>
         <a href="#services">Услуги</a>
+        <a href="#equipment">Оборудование</a>
         <a href="#faq">FAQ</a>
         <a href="#contacts">Контакты</a>
       </nav>
@@ -32,15 +40,23 @@
       <div class="container hero-grid">
         <div>
           <p class="eyebrow">ОПЕРАТИВНАЯ ПОЛИГРАФИЯ</p>
-          <h1>Печать для бизнеса и событий за короткие сроки</h1>
-          <p class="lead">
-            Визитки, листовки, брошюры, этикетки, сувениры и рекламные материалы.
-            Качественно, быстро, с понятным процессом от заявки до выдачи.
+          <h1 class="hero-cycle">
+            <span>Быстро!</span>
+            <span>Качественно!</span>
+            <span>Доступные цены!</span>
+          </h1>
+          <p class="lead">Сроки от 30 минут без урона качеству!</p>
+          <p class="hero-list">
+            Визитки, листовки, буклеты, лифлеты, наклейки, этикетки, коробки, пакеты,
+            штампы и печати, футболки, толстовки, кружки, ручки, тиснение, фольгирование,
+            меню, обложки для меню, счетницы, блокноты, каталоги, календари, открытки,
+            папки, конверты, костеры, ежедневники.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#contacts">Оставить заявку</a>
-            <a class="btn btn-ghost" href="#services">Смотреть услуги</a>
+            <a class="btn btn-ghost" href="#services">Наши услуги</a>
           </div>
+          <a class="works-link" href="#works">Посмотри на наши работы!</a>
         </div>
       </div>
     </section>
@@ -66,35 +82,35 @@
             <p>Сезонные флаеры и акции</p>
           </article>
           <article class="work-item" tabindex="0">
-            <div class="work-media"><picture><source srcset="primers/IMG_9436.webp" type="image/webp"><img src="primers/IMG_9436.JPG" alt="Пример работы 5" width="1600" height="1200" loading="lazy" decoding="async"></picture></div>
+            <div class="work-media"><picture><source srcset="primers/IMG_9436.webp" type="image/webp"><img src="primers/IMG_9436.JPG" alt="Пример работы 5" width="1600" height="1200" loading="eager" decoding="async"></picture></div>
             <p>Фирменные открытки SAVOY</p>
           </article>
           <article class="work-item" tabindex="0">
-            <div class="work-media"><picture><source srcset="primers/IMG_9531.webp" type="image/webp"><img src="primers/IMG_9531.JPG" alt="Пример работы 6" width="1600" height="1200" loading="lazy" decoding="async"></picture></div>
+            <div class="work-media"><picture><source srcset="primers/IMG_9531.webp" type="image/webp"><img src="primers/IMG_9531.JPG" alt="Пример работы 6" width="1600" height="1200" loading="eager" decoding="async"></picture></div>
             <p>Коробки для упаковки YAUZA</p>
           </article>
           <article class="work-item" tabindex="0">
-            <div class="work-media"><picture><source srcset="primers/IMG_9576.webp" type="image/webp"><img src="primers/IMG_9576.JPG" alt="Пример работы 7" width="1600" height="1200" loading="lazy" decoding="async"></picture></div>
+            <div class="work-media"><picture><source srcset="primers/IMG_9576.webp" type="image/webp"><img src="primers/IMG_9576.JPG" alt="Пример работы 7" width="1600" height="1200" loading="eager" decoding="async"></picture></div>
             <p>Фигурные меню-карты</p>
           </article>
           <article class="work-item" tabindex="0">
-            <div class="work-media"><picture><source srcset="primers/IMG_9581.webp" type="image/webp"><img src="primers/IMG_9581.JPG" alt="Пример работы 8" width="1600" height="1200" loading="lazy" decoding="async"></picture></div>
+            <div class="work-media"><picture><source srcset="primers/IMG_9581.webp" type="image/webp"><img src="primers/IMG_9581.JPG" alt="Пример работы 8" width="1600" height="1200" loading="eager" decoding="async"></picture></div>
             <p>Меню на дизайнерской бумаге</p>
           </article>
           <article class="work-item" tabindex="0">
-            <div class="work-media"><picture><source srcset="primers/IMG_9582.webp" type="image/webp"><img src="primers/IMG_9582.JPG" alt="Пример работы 9" width="1600" height="1200" loading="lazy" decoding="async"></picture></div>
+            <div class="work-media"><picture><source srcset="primers/IMG_9582.webp" type="image/webp"><img src="primers/IMG_9582.JPG" alt="Пример работы 9" width="1600" height="1200" loading="eager" decoding="async"></picture></div>
             <p>Комплект меню YAUZA</p>
           </article>
           <article class="work-item" tabindex="0">
-            <div class="work-media"><picture><source srcset="primers/IMG_9584.webp" type="image/webp"><img src="primers/IMG_9584.JPG" alt="Пример работы 10" width="1600" height="1200" loading="lazy" decoding="async"></picture></div>
+            <div class="work-media"><picture><source srcset="primers/IMG_9584.webp" type="image/webp"><img src="primers/IMG_9584.JPG" alt="Пример работы 10" width="1600" height="1200" loading="eager" decoding="async"></picture></div>
             <p>Визитки с тиснением SAVOY</p>
           </article>
           <article class="work-item" tabindex="0">
-            <div class="work-media"><picture><source srcset="primers/IMG_9587.webp" type="image/webp"><img src="primers/IMG_9587.JPG" alt="Пример работы 11" width="1600" height="1200" loading="lazy" decoding="async"></picture></div>
+            <div class="work-media"><picture><source srcset="primers/IMG_9587.webp" type="image/webp"><img src="primers/IMG_9587.JPG" alt="Пример работы 11" width="1600" height="1200" loading="eager" decoding="async"></picture></div>
             <p>Матовые визитки SAVOY</p>
           </article>
           <article class="work-item" tabindex="0">
-            <div class="work-media"><picture><source srcset="primers/IMG_9590.webp" type="image/webp"><img src="primers/IMG_9590.JPG" alt="Пример работы 12" width="1600" height="1200" loading="lazy" decoding="async"></picture></div>
+            <div class="work-media"><picture><source srcset="primers/IMG_9590.webp" type="image/webp"><img src="primers/IMG_9590.JPG" alt="Пример работы 12" width="1600" height="1200" loading="eager" decoding="async"></picture></div>
             <p>Фигурные меню «Солнце»</p>
           </article>
         </div>
@@ -157,72 +173,259 @@
       </div>
     </section>
 
-    <section class="section section-soft" id="faq">
+    <section class="section equipment-section" id="equipment">
       <div class="container">
-        <p class="eyebrow">FAQ</p>
-        <h2>Частые вопросы</h2>
-        <div class="faq-list">
-          <article class="faq-item">
-            <button class="faq-q" type="button">Можно ли сделать нестандартный формат?</button>
-            <p class="faq-a">Да, подберем размер, форму и материал под задачу и бюджет.</p>
+        <p class="eyebrow">ВОЗМОЖНОСТИ</p>
+        <h2>Наше оборудование и возможности</h2>
+        <div class="equipment-grid">
+          <article class="equipment-card">
+            <div class="equipment-image">
+              <img src="assets/equipment/xerox-versant-180.jpg" alt="Xerox Versant 180" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="equipment-body">
+              <h3>Цифровой принтер XEROX Versant 180 pro</h3>
+              <p>Профессиональное печатное оборудование, гарантирует одну из лучших цифровых передач.</p>
+            </div>
           </article>
-          <article class="faq-item">
-            <button class="faq-q" type="button">Поможете, если нет готового макета?</button>
-            <p class="faq-a">Да, можем доработать идею или подготовить макет с нуля.</p>
+          <article class="equipment-card">
+            <div class="equipment-image">
+              <img src="assets/equipment/xerox-c60.jpg" alt="Xerox C60" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="equipment-body">
+              <h3>Цифровой принтер XEROX C60</h3>
+              <p>Так же является прекрасным оборудованием для цифровой печати и всегда является качественной заменой в случае неисправности основного принтера, всегда заменит без потери качества и скорости производства.</p>
+            </div>
           </article>
-          <article class="faq-item">
-            <button class="faq-q" type="button">Какие типы продукции доступны?</button>
-            <p class="faq-a">Полиграфия, рекламные материалы, сувенирная и текстильная печать.</p>
+          <article class="equipment-card equipment-compact">
+            <div class="equipment-image">
+              <img src="assets/equipment/ideal-6550-95ep.jpg" alt="Ideal 6550-95EP" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="equipment-body">
+              <h3>Резак Ideal 6550–95EP</h3>
+              <p>Электронный резак, лучшее решение для резки любой печатной продукции, точность и качественность гарантирована!</p>
+            </div>
+          </article>
+          <article class="equipment-card equipment-compact">
+            <div class="equipment-image">
+              <img src="assets/equipment/ideal-4705.jpg" alt="Ideal 4705" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="equipment-body">
+              <h3>Резак Ideal 4705</h3>
+              <p>Младший брат предыдущего резака, всегда придет на помощь при неисправности, что позволит бесперерывно выполнять работу!</p>
+            </div>
+          </article>
+          <article class="equipment-card equipment-compact">
+            <div class="equipment-image">
+              <img src="assets/equipment/iecho-pk0705.jpg" alt="IECHO PK-0705" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="equipment-body">
+              <h3>Плоттерный резак IECHO 0705</h3>
+              <p>Одно из лучших оборудований для вырубки и изготовления этикеток, так же его возможностями можно делать коробки и подобные материалы.</p>
+            </div>
+          </article>
+          <article class="equipment-card equipment-compact">
+            <div class="equipment-image">
+              <img src="assets/equipment/gmp-excelam-355q.jpg" alt="GMP EXCELAM 355Q" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="equipment-body">
+              <h3>Ламинатор GMP EXCELAM-355Q</h3>
+              <p>Его возможности позволяют ламинировать листы в ширину до 355 мм., а так же фольгировать.</p>
+            </div>
+          </article>
+          <article class="equipment-card">
+            <div class="equipment-image">
+              <img src="assets/equipment/vektor-wt-2-210.jpg" alt="WT-2-210" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="equipment-body">
+              <h3>Аппарат для тиснения WT-2-210</h3>
+              <p>Этот аппарат позволяет производить тиснение фольгой на самых разных материалах: бумаге, картоне, пластмассе, коже и др. материалах!</p>
+            </div>
+          </article>
+          <article class="equipment-card">
+            <div class="equipment-image">
+              <img src="assets/equipment/cyklos-gpm-315.jpeg" alt="Cyklos GPM 315" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="equipment-body">
+              <h3>Биговщик GMP 315 CYKLOS</h3>
+              <p>Позволяет делать ровную биговку и перфорацию.</p>
+            </div>
+          </article>
+          <article class="equipment-card">
+            <div class="equipment-image">
+              <img src="assets/equipment/cyklos-ucr-9.jpeg" alt="Cyklos UCR 9" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="equipment-body">
+              <h3>Скруглитель углов UCR 9 CYKLOS</h3>
+              <p>Аппарат для ручного скругления углов.</p>
+            </div>
+          </article>
+          <article class="equipment-card">
+            <div class="equipment-image">
+              <img src="assets/equipment/renz-rw360.jpg" alt="RENZ RW 360" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="equipment-body">
+              <h3>Брошюровщик для металлических пружин RENZ RW 360</h3>
+              <p>Аппрат для брошюровки и установки металлических пружин, нужная вещь для изготовления календарей и блокнотов.</p>
+            </div>
+          </article>
+          <article class="equipment-card">
+            <div class="equipment-image">
+              <img src="assets/equipment/renz-combi-s.jpg" alt="RENZ combi S" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="equipment-body">
+              <h3>Брошюровщик для пластиковых пружин RENZ combi S</h3>
+              <p>Аппрат для брошюровки и установки пластиковых пружин, чаще всего используется для изготовления презентаций.</p>
+            </div>
+          </article>
+          <article class="equipment-card">
+            <div class="equipment-image">
+              <img src="assets/equipment/heat-press-40x50.jpg" alt="Термопресс 40x50" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="equipment-body">
+              <h3>Термопресс плоский высокого давления 40х50 см., CZ-PM-FH45-L</h3>
+              <p>Используется для прямого переноса на прямые поверхности термопленок, а так же сублимационных красок. Используется при изготовлении металлических табличек, футболок, толстовок, а так же бейджиков.</p>
+            </div>
+          </article>
+          <article class="equipment-card">
+            <div class="equipment-image">
+              <img src="assets/equipment/mug-press-st-210.jpg" alt="ST-210" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="equipment-body">
+              <h3>Термопресс для двух кружек ST-210</h3>
+              <p>Аппарат для нанесения на специальные кружки под сублимацию.</p>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
+    <section class="section section-soft" id="faq">
+      <div class="container">
+        <p class="eyebrow">FAQ</p>
+        <h2>Часто задаваемые вопросы</h2>
+        <div class="faq-list">
+          <article class="faq-item">
+            <button class="faq-q" type="button">Какого формата должны быть файлы?</button>
+            <p class="faq-a">Желательно векторные файлы в кривых: AI, PDF или SVG. Также подойдут TIFF или PNG, чтобы можно было сравнить или использовать при необходимости.</p>
+          </article>
+          <article class="faq-item">
+            <button class="faq-q" type="button">Как правильно оформить ТЗ (тех. задание)?</button>
+            <p class="faq-a">Нам нужны 4 пункта: тираж, формат (размер детали), цветность печати (1+0/1+1/4+0/4+4) и бумага с плотностью.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section question-section">
+      <div class="container question-box">
+        <div>
+          <h2>У вас остались вопросы?</h2>
+          <p>Напишите нам и мы ответим на все в течении 30 минут!</p>
+        </div>
+        <a class="btn btn-primary" href="https://t.me/print_and_paint">Написать в Telegram</a>
+      </div>
+    </section>
+
+    <section class="section review-section" id="review">
+      <div class="container review-box">
+        <div class="skidka-side skidka-left" aria-hidden="true">
+          <img src="assets/skidka/Ресурс 1.svg" alt="">
+          <img src="assets/skidka/Ресурс 2.svg" alt="">
+          <img src="assets/skidka/Ресурс 3.svg" alt="">
+          <img src="assets/skidka/Ресурс 4.svg" alt="">
+          <img src="assets/skidka/Ресурс 5.svg" alt="">
+          <img src="assets/skidka/Ресурс 6.svg" alt="">
+        </div>
+        <h2>Оставь отзыв в Яндекс картах</h2>
+        <p>И получи скидку на последующий заказ в размере 10%!</p>
+        <a class="btn btn-ghost" href="https://yandex.ru/maps/?text=Print%20%26%20Paint%20%D0%90%D0%B4%D0%BC%D0%B8%D1%80%D0%B0%D0%BB%D0%B0%20%D0%9C%D0%B0%D0%BA%D0%B0%D1%80%D0%BE%D0%B2%D0%B0%208%20%D1%81%D1%82%D1%80%201" target="_blank" rel="noopener">Оставить отзыв</a>
+        <div class="skidka-side skidka-right" aria-hidden="true">
+          <img src="assets/skidka/Ресурс 1.svg" alt="">
+          <img src="assets/skidka/Ресурс 2.svg" alt="">
+          <img src="assets/skidka/Ресурс 3.svg" alt="">
+          <img src="assets/skidka/Ресурс 4.svg" alt="">
+          <img src="assets/skidka/Ресурс 5.svg" alt="">
+          <img src="assets/skidka/Ресурс 6.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="section map-section">
+      <div class="container map-grid">
+        <div>
+          <h2>Как к нам проехать</h2>
+          <p>Если вы на автомобиле, заранее оставьте заявку у <a class="text-accent" href="#contacts">менеджера</a> на оформление пропуска. Требования к пропуску: полностью номер и марка автомобиля.</p>
+        </div>
+        <div class="map-embed">
+          <iframe
+            class="map-iframe"
+            src="https://yandex.ru/map-widget/v1/?ll=37.489874%2C55.836557&z=17&pt=37.489874,55.836557,pm2rdm"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Print&Paint на карте">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
     <section class="contact-section" id="contacts">
-      <div class="container contact-grid">
-        <div class="contact-info">
-          <p class="eyebrow">СВЯЗАТЬСЯ</p>
-          <h2>Наши контакты</h2>
-          <p class="contact-lead">Свяжитесь с нами удобным способом, мы всегда рады помочь.</p>
-
-          <div class="contact-list">
-            <div class="contact-item">
-              <div class="contact-icon">☎</div>
-              <div><small>Телефон</small><p><a href="tel:+74957730633">+7 (495) 773-06-33</a></p></div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon">✆</div>
-              <div><small>Мобильный</small><p><a href="tel:+79167562955">+7 (916) 756-29-55</a></p></div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon">✉</div>
-              <div><small>Email</small><p><a href="mailto:printandpaint@mail.ru">printandpaint@mail.ru</a></p></div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon">⌖</div>
-              <div><small>Адрес</small><p>ул. Адмирала Макарова, 8 стр. 1</p></div>
-            </div>
+      <div class="container contact-shell">
+        <div class="contact-head">
+          <div>
+            <p class="eyebrow">СВЯЗАТЬСЯ</p>
+            <h2>Наши контакты</h2>
+            <p class="contact-lead">Свяжитесь с нами удобным способом, мы всегда рады помочь.</p>
           </div>
-
           <div class="contact-actions">
-            <a class="btn btn-primary" href="tel:+74957730633">Позвонить</a>
+            <a class="btn btn-primary" href="tel:+79266020633">Позвонить</a>
             <a class="btn btn-primary" href="mailto:printandpaint@mail.ru">Написать</a>
           </div>
         </div>
-
-        <div class="contact-form-wrap">
-          <h3>Оставить заявку</h3>
-          <p>Заполните форму, мы свяжемся с вами в течение 15 минут.</p>
-          <form class="contact-form" action="#" method="post">
-            <div class="form-row">
-              <label>Ваше имя *<input type="text" placeholder="Иван Иванов"></label>
-              <label>Телефон *<input type="tel" placeholder="+7 (999) 999-99-99"></label>
+        <div class="contact-grid">
+          <article class="contact-card">
+            <span class="contact-badge">Телефон</span>
+            <div class="contact-main">
+              <div class="contact-icon">
+                <svg class="contact-icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M16.552 22.133c-1.44-.053-5.521-.617-9.795-4.89-4.273-4.274-4.836-8.354-4.89-9.795-.08-2.196 1.602-4.329 3.545-5.162a1.47 1.47 0 0 1 1.445.159c1.6 1.166 2.704 2.93 3.652 4.317a1.504 1.504 0 0 1-.256 1.986l-1.951 1.449a.48.48 0 0 0-.142.616c.442.803 1.228 1.999 2.128 2.899.901.9 2.153 1.738 3.012 2.23a.483.483 0 0 0 .644-.162l1.27-1.933a1.503 1.503 0 0 1 2.056-.332c1.407.974 3.049 2.059 4.251 3.598a1.47 1.47 0 0 1 .189 1.485c-.837 1.953-2.955 3.616-5.158 3.535" fill="currentColor"/>
+                </svg>
+              </div>
+              <div>
+                <p><a href="tel:+79266020633">+7 (926) 602-06-33</a></p>
+                <small>Позвоните или напишите — отвечаем быстро.</small>
+              </div>
             </div>
-            <label>Email<input type="email" placeholder="example@mail.ru"></label>
-            <label>Сообщение<textarea placeholder="Опишите, что вам нужно напечатать..."></textarea></label>
-            <button type="submit" class="btn btn-primary form-submit">Отправить заявку</button>
-            <small>Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.</small>
-          </form>
+          </article>
+          <article class="contact-card">
+            <span class="contact-badge">Почта</span>
+            <div class="contact-main">
+              <div class="contact-icon">
+                <svg class="contact-icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M3 7l9 6l9 -6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <p><a href="mailto:printandpaint@mail.ru">printandpaint@mail.ru</a></p>
+                <small>Пришлите ТЗ и макеты для оценки.</small>
+              </div>
+            </div>
+          </article>
+          <article class="contact-card">
+            <span class="contact-badge">Telegram</span>
+            <div class="contact-main">
+              <div class="contact-icon contact-icon-telegram">
+                <svg class="contact-icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" fill="currentColor"/>
+                </svg>
+              </div>
+              <div>
+                <p><a href="https://t.me/print_and_paint">@print_and_paint</a></p>
+                <small>Самый быстрый канал связи.</small>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -237,4 +440,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+
+
 

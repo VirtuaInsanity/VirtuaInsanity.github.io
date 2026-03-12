@@ -29,6 +29,12 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 const workItems = document.querySelectorAll('.work-item');
 const isFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 const isMobileViewport = window.matchMedia('(max-width: 720px)').matches;
+const worksSection = document.querySelector('#works');
+const main = document.querySelector('main');
+
+if (isMobileViewport && worksSection && main) {
+  main.appendChild(worksSection);
+}
 
 const clearFocus = (except) => {
   workItems.forEach((item) => {
@@ -117,3 +123,27 @@ if (header && isMobileViewport) {
     requestAnimationFrame(applyHeaderState);
   }, { passive: true });
 }
+
+const workImages = document.querySelectorAll('.works-grid picture img');
+workImages.forEach((img) => {
+  img.loading = 'eager';
+  img.decoding = 'async';
+  img.fetchPriority = 'high';
+
+  const forceFallback = () => {
+    const picture = img.closest('picture');
+    if (picture) {
+      picture.querySelectorAll('source').forEach((source) => source.remove());
+    }
+    const fallback = img.getAttribute('src');
+    if (fallback && img.src !== fallback) {
+      img.src = fallback;
+    }
+  };
+
+  img.addEventListener('error', forceFallback, { once: true });
+
+  if (img.complete && img.naturalWidth === 0) {
+    forceFallback();
+  }
+});

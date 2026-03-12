@@ -42,14 +42,6 @@ body {
   position: relative;
 }
 
-@media (min-width: 981px) {
-  body {
-    transform: scale(0.8);
-    transform-origin: top left;
-    width: 125%;
-  }
-}
-
 body::before {
   content: "";
   position: fixed;
@@ -249,7 +241,7 @@ body::before {
 
 .hero-logo {
   position: absolute;
-  right: calc(max(1vw, 12px) - 400px);
+  right: clamp(24px, 4vw, 72px);
   top: 52%;
   transform: translateY(-50%);
 }
@@ -637,7 +629,7 @@ h3 {
 
 .equipment-grid {
   display: grid;
-  grid-template-columns: repeat(4, 440px);
+  grid-template-columns: repeat(4, minmax(260px, 1fr));
   gap: 1.4rem;
   justify-content: center;
   align-items: stretch;
@@ -748,6 +740,18 @@ h3 {
   .equipment-card {
     align-items: center;
     padding: 0.85rem 1rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  .equipment-grid {
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+  }
+}
+
+@media (max-width: 1200px) {
+  .equipment-grid {
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
   }
 }
 
